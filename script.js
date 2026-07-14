@@ -1,21 +1,4 @@
-const sections=document.querySelectorAll(".content");
-
-const observer=new IntersectionObserver(entries=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
-
-}
-
-});
-
-});
-
-sections.forEach(section=>{
-
-observer.observe(section);
-
-});
+const m=document.getElementById('menu');document.getElementById('menuBtn').onclick=()=>m.classList.toggle('open');
+const b=document.body,t=document.getElementById('themeBtn');
+if(localStorage.theme==='light')b.classList.add('light');
+t.onclick=()=>{b.classList.toggle('light');localStorage.theme=b.classList.contains('light')?'light':'dark';};
