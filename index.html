@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ミリプロ推しの集い</title>
-<link rel="stylesheet" href="style.css">
-</head><body>
-<header><h1>ミリプロ推しの集い</h1><button id="menuBtn">☰</button><button id="themeBtn">🌙</button></header>
-<nav id="menu"><a href="#about">ABOUT</a><a href="#rules">RULE</a><a href="#news">NEWS</a><a href="#contact">CONTACT</a></nav>
-<main>
-<section><h2>ようこそ！</h2><p>このプロジェクトは今後さらに機能追加します。</p></section>
-<section id="about"><h2>ABOUT</h2></section>
-<section id="rules"><h2>RULE</h2></section>
-<section id="news"><h2>NEWS</h2></section>
-<section id="contact"><h2>CONTACT</h2></section>
-</main>
-<script src="script.js"></script>
-</body></html>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ミリプロ推しの集い</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="header"><div class="logo">ミリプロ推しの集い</div><button id="settingsBtn">⚙️</button><button id="menuBtn">☰</button></header>
+<nav id="drawer"><a href="#about">ABOUT</a><a href="#rules">RULE</a><a href="#news">NEWS</a><a href="#contact">CONTACT</a></nav>
+<div id="overlay"></div>
+<div id="settings" class="modal"><div class="card"><h3>設定</h3><button id="themeBtn">ライト/ダーク切替</button><button id="closeSettings">閉じる</button></div></div>
+<section class="hero reveal"><h1>ミリプロ推しの集い</h1><p>LINEオープンチャットへようこそ！</p><a class="btn" href="#">LINEオープンチャットに参加</a></section>
+<section id="about" class="glass reveal"><h2>ABOUT</h2><p>ファン交流コミュニティです。</p></section>
+<section id="rules" class="glass reveal"><h2>ルール</h2>
+<details><summary>基本ルール</summary><ul><li>参加時は挨拶</li><li>宣伝抜け禁止</li><li>暴言・個人情報投稿禁止</li></ul></details>
+<details><summary>アイコンについて</summary><p>自作・許可済みイラスト可。詳細は公式ガイドラインをご確認ください。</p></details>
+</section>
+<section id="news" class="reveal"><h2>NEWS</h2><div class="news">2026/07/15 ホームページ準備中</div></section>
+<section id="contact" class="glass reveal"><h2>CONTACT</h2><p>お問い合わせはオープンチャット内でお願いします。</p></section>
+<button id="topBtn">↑</button>
+<script src="script.js"></script></body></html>
