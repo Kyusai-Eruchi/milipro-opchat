@@ -163,3 +163,25 @@ margin-top:60px;
 color:#999;
 
 }
+
+.notice{
+
+width:min(900px,90%);
+margin:30px auto;
+padding:18px;
+
+background:#3b2b00;
+border:1px solid #ffd54f;
+border-left:6px solid #ffca28;
+
+border-radius:12px;
+
+color:#fff3cd;
+
+}
+
+.notice strong{
+
+color:#fff;
+
+}
